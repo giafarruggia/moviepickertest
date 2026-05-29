@@ -1,7 +1,4 @@
-title,year,genre,length
-Hereditary,2018,Horror,127
-Midsommar,2019,Horror,148
-The Lighthouse,2019,Horror,109
-21 Jump Street,2012,Comedy,109
-Iron Lung,2026,Horror,127
-C'mon C'mon,2021,Drama,108
+title,year,medium,length,vibes
+Hereditary,2018,Movie,127,scary|sad|family|cult
+Midsommar,2019,Movie,148,sunny|breakup|cult|weird
+The Last of Us,2023,TV,540,isolation|sad|apocalypse

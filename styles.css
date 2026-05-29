@@ -11,6 +11,12 @@ body {
     gap: 12px;
 }
 
+#vibesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 button {
     padding: 10px;
     cursor: pointer;

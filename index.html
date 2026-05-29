@@ -8,20 +8,25 @@
 </head>
 <body>
 <div class="container">
-    <h1>Movie Picker</h1>
+    <h1>🎬 Movie Picker</h1>
 
-    <label for="genre">Genre</label>
-    <select id="genre">
-        <option value="">Any Genre</option>
+    <label for="medium">Medium</label>
+    <select id="medium">
+        <option value="">Any Medium</option>
     </select>
 
     <label for="length">Minimum Runtime</label>
     <select id="length">
         <option value="0">Any Length</option>
-        <option value="90">90+ minutes</option>
-        <option value="120">120+ minutes</option>
-        <option value="150">150+ minutes</option>
+        <option value="60">60+ min</option>
+        <option value="90">90+ min</option>
+        <option value="120">120+ min</option>
+        <option value="150">150+ min</option>
+        <option value="180">180+ min</option>
     </select>
+
+    <label>Vibes</label>
+    <div id="vibesContainer"></div>
 
     <button id="pickMovie">Pick a Movie</button>
 

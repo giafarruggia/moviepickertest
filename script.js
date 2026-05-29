@@ -62,7 +62,7 @@ function populateVibes() {
 document.getElementById("pickMovie").addEventListener("click", () => {
 
     const medium = document.getElementById("medium").value;
-    const maxLength = parseInt(document.getElementById("length").value);
+    const minLength = parseInt(document.getElementById("length").value);
 
     const selectedVibes = [...document.querySelectorAll(".vibe-checkbox:checked")]
         .map(cb => cb.value);

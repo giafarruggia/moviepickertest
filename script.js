@@ -26,7 +26,7 @@ fetch("movies.csv")
 });
 
 function populateMediums() {
-    let mediums = [...new Set(movies.map(m => m.medium))].filter(Boolean).sort();
+    const mediums = [...new Set(movies.map(m => m.medium))].sort();
     const select = document.getElementById("medium");
 
     mediums.forEach(medium => {

@@ -1,20 +1,20 @@
-TITLE,YEAR,MEDIUM,LENGTH,VIBES
-Backrooms,2026,movie,110,horror
-Obsession,2026,movie,108,horror
-Killer Klowns from Outer Space,1988,movie,86,horror|comfort|silly
-The X-Files,1990,tv show,500,horror|sci-fi|comfort
-Twin Peaks,1990,tv show,500,horror|sci-fi
-It's Always Sunny in Philadelphia,2004,tv show,500,unwatched|silly
-Possession,1981,movie,124,horror
-The Exorcist,1973,movie,122,horror|comfort
-American Psycho,2000,movie,102,horror|comfort
-Longlegs,2024,movie,101,horror
-Keeper,2026,movie,99,horror
-Rite Here Rite Now,2024,movie,144,comfort|concert|silly
-(500) Days of Summer,2009,movie,95,unwatched
-I Saw the TV Glow,2023,movie,100,horror|sci-fi|unwatched
-The Rocky Horror Picture Show,1975,movie,100,sci-fi|musical|campy
-Penny Dreadful,2010,tv show,500,horror
-Nosferatu,2024,movie,133,horror|comfort
-Project Hail Mary,2026,movie,156,comfort|silly|sci-fi
-Waitress,2010,musical,200,comfort|silly
+title,year,medium,length,vibes input,vibes output
+Backrooms,2026,movie,110,horror,horror
+Obsession,2026,movie,108,horror,horror
+Killer Klowns from Outer Space,1988,movie,86,"horror, comfort, silly",horror|comfort|silly
+The X-Files,1990,tv show,900,"horror, sci-fi, comfort",horror|sci-fi|comfort
+Twin Peaks,1990,tv show,900,"horror, sci-fi",horror|sci-fi
+It's Always Sunny in Philadelphia,2004,tv show,500,unwatched,unwatched
+Possession,1981,movie,124,horror,horror
+The Exorcist,1973,movie,122,"horror, comfort",horror|comfort
+American Psycho,2000,movie,102,"horror, comfort",horror|comfort
+Longlegs,2024,movie,101,horror,horror
+Keeper,2026,movie,99,horror,horror
+Rite Here Rite Now,2024,movie,144,"comfort, concert, silly",comfort|concert|silly
+(500) Days of Summer,2009,movie,95,unwatched,unwatched
+I Saw the TV Glow,2023,movie,100,"horror, sci-fi, unwatched",horror|sci-fi|unwatched
+The Rocky Horror Picture Show,1975,movie,100,"sci-fi, campy",sci-fi|campy
+Penny Dreadful,2010,tv show,500,horror,horror
+Nosferatu,2024,movie,133,"horror, comfort",horror|comfort
+Project Hail Mary,2026,movie,156,"comfort, silly, sci-fi",comfort|silly|sci-fi
+Waitress,2010,musical,200,"comfort, silly",comfort|silly

@@ -63,13 +63,16 @@ button {
     display: inline-block;
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #666;
+    color: #707070;
     cursor: pointer;
     text-decoration: underline;
+
+    display: block;
+    text-align: center;
 }
 
 .refresh-link:hover {
-    color: #000;
+    color: #ffffff;
 }
 
 #vibesContainer {

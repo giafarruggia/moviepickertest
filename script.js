@@ -14,7 +14,7 @@ fetch("movies.csv")
             year: values[1]?.trim() || "",
             medium: values[2]?.trim() || "",
             length: parseInt(values[3]) || 0,
-            vibes: (values[5] || "")
+            vibes: (values[4] || "")
                 .split("|")
                 .map(v => v.trim())
                 .filter(Boolean)

@@ -175,7 +175,7 @@ document.getElementById("refreshData").addEventListener("click", async (e) => {
     populateMediums();
     populateVibes();
 
-    document.getElementById("result").textContent = "data refreshed!";
+    document.getElementById("result").textContent = "mmm... fresh data.";
 });
 
 

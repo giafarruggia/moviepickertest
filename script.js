@@ -1,42 +1,29 @@
-const CACHE_KEY = "movies_cache";
-const TIME_KEY = "movies_cache_time";
-const ONE_HOUR = 1000 * 60 * 60;
-
-function setCache(data) {
-    localStorage.setItem(CACHE_KEY, JSON.stringify(data));
-    localStorage.setItem(TIME_KEY, Date.now());
-}
-
-function getCache() {
-    const raw = localStorage.getItem(CACHE_KEY);
-    return raw ? JSON.parse(raw) : null;
-}
-
-function isStale() {
-    const last = Number(localStorage.getItem(TIME_KEY));
-    return !last || (Date.now() - last > ONE_HOUR);
-}
 
 let movies = [];
 
-function loadMoviesFromCSV() {
-    return async function loadMovies() {
-    const cached = getCache();
+fetch("movies.csv")
+.then(response => response.text())
+.then(text => {
+    const rows = text.trim().split(/\r?\n/);
 
-    if (cached) {
-        movies = cached;
-        populateMediums();
-        populateVibes();
-    }
+    movies = rows.slice(1).map(row => {
+        const values = row.split(",");
 
-    if (isStale() || !cached) {
-        const fresh = await loadMoviesFromCSV();
+        return {
+            title: values[1]?.trim() || "",
+            year: values[2]?.trim() || "",
+            medium: values[3]?.trim() || "",
+            length: parseInt(values[4]) || 0,
+            vibes: (values[5] || "")
+                .split("|")
+                .map(v => v.trim())
+                .filter(Boolean)
+        };
+    });
 
-        movies = fresh;
-        populateMediums();
-        populateVibes();
-    }
-}
+    populateMediums();
+    populateVibes();
+});
 
 function populateMediums() {
     const mediums = [...new Set(movies.map(m => m.medium))].sort();
@@ -112,4 +99,3 @@ document.getElementById("pickMovie").addEventListener("click", () => {
             ? `${movie.title} (${movie.year})`
             : movie.title;
 });
-loadMovies();

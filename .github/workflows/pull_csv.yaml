@@ -14,7 +14,7 @@ jobs:
 
       - name: Download Google Sheet as CSV
         run: |
-          curl -L -o movies.csv "https://docs.google.com/spreadsheets/d/1d34tKIHhvrtr1XP4iEjRDZrxMYpmwr7b123JzaOyyWo/export?format=csv&gid=952155703"
+          curl -L -o movies.csv "https://docs.google.com/spreadsheets/d/1d34tKIHhvrtr1XP4iEjRDZrxMYpmwr7b123JzaOyyWo/export?format=csv&gid=991143387"
 
       - name: Commit and Push changes
         run: |

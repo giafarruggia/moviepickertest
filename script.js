@@ -158,4 +158,25 @@ document.getElementById("randomMovie").addEventListener("click", () => {
             ? `${movie.title} (${movie.year})`
             : movie.title;
 });
+
+document.getElementById("refreshData").addEventListener("click", async () => {
+
+    localStorage.removeItem(CACHE_KEY);
+    localStorage.removeItem(TIME_KEY);
+
+    movies = await loadMoviesFromCSV();
+
+    document.getElementById("medium").innerHTML =
+        '<option value="">any medium</option>';
+
+    document.getElementById("vibesContainer").innerHTML = "";
+
+    populateMediums();
+    populateVibes();
+
+    document.getElementById("result").textContent =
+        "data refreshed!";
+});
+
+
 loadMovies();
